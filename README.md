@@ -13,11 +13,11 @@ This project demonstrates a working PayPal payment flow using:
 ```
 project-root/
 │
-├── backend/           ← FastAPI project
+├── backend/fastapi_app           ← FastAPI project
 │   └── main.py
 │   └── .env
 │
-├── frontend/          ← React project (Vite + Tailwind)
+├── frontend/react_frontend          ← React project (Vite + Tailwind)
 │   └── src/
 │   └── index.html
 │   └── package.json
@@ -43,7 +43,7 @@ project-root/
 #### A. Install dependencies
 
 ```bash
-cd backend
+cd backend/fastapi_app
 pip install fastapi uvicorn httpx python-dotenv
 ```
 
@@ -72,7 +72,7 @@ The backend will be available at: [http://localhost:8000](http://localhost:8000)
 #### A. Install dependencies
 
 ```bash
-cd frontend
+cd frontend/react_frontend     
 npm install
 ```
 
