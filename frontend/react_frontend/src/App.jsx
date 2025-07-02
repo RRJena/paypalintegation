@@ -7,26 +7,26 @@ export default function App() {
   const [amount, setAmount] = useState('5.00');
   const [currency, setCurrency] = useState('USD');
 
-  // ✅ Automatically capture payment after approval
+  //Automatically capture payment after approval
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const success = params.get("success");
     const token = params.get("token");
 
     if (success === "true" && token) {
-      console.log("✅ Payment approved. Capturing...");
+      console.log("Payment approved. Capturing...");
 
       axios.post(`${API_BASE}/pay/capture/${token}`)
         .then(res => {
-          console.log("✅ Payment Captured:", res.data);
+          console.log("Payment Captured:", res.data);
           alert("Payment Captured Successfully!");
         })
         .catch(err => {
-          console.error("❌ Capture Failed:", err);
+          console.error("Capture Failed:", err);
           alert("Payment Capture Failed!");
         });
 
-      // ✅ Clean the URL
+      //Clean the URL
       window.history.replaceState({}, document.title, "/");
     }
   }, []);
