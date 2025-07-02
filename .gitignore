@@ -1,0 +1,10 @@
+node_modules
+.env
+lib
+lib64
+include
+bin
+__pycache__
+.env:Zone.Identifier
+main.py:Zone.Identifier
+pyvenv.cfg
