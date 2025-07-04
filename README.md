@@ -141,6 +141,7 @@ The static files will be output to `dist/`
 ## ✅ Status: Fully Working Sandbox Demo
 
 
+![image](https://github.com/user-attachments/assets/1536ccb8-4887-4597-b5d9-c459ee24af1e)
 
 
 
